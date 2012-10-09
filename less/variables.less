@@ -38,7 +38,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             darken(#304f9d,10%);
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -55,7 +55,7 @@
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsColor:         darken(@linkColor,5%); // empty to use BS default, @textColor
 
 // Tables
 // -------------------------
@@ -159,14 +159,14 @@
 @navbarCollapseWidth:             979px;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBackgroundHighlight:       lighten(@navbarBackground, 5%);
+@navbarBackground:                #304f9d;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarText:                      #efefef;
+@navbarLinkColor:                 #efefef;
+@navbarLinkColorHover:            lighten(@navbarText,15%);
+@navbarLinkColorActive:           lighten(@navbarText,15%);
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
